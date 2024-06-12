@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "開発環境構築 - asdf"
+date:   2024-06-11 21:21:49 +0900
+categories: jekyll update
+tags:
+- 開発環境構築
+---
+
+
+## Tool
+
+- asdf
+- pipenv
+
+## asdf でPythonをインストールする
+
+{% highlight shell %}
+
+# プラグインをインストール
+asdf plugin-add python
+
+# インストール可能なバージョンの確認
+asdf list-all python
+
+# インストール
+asdf install python 3.11.6
+
+# 実体の確認
+where python
+/Users/USERNAME/.asdf/shims/python
+
+asdf which python
+/Users/USERNAME/.asdf/installs/python/3.11.6/bin/python
+
+# インストールを確認
+asdf list python
+
+# グローバルに設定 & shim 再生成
+asdf global python 3.11.6
+asdf reshim python
+
+# シェルを再起動 / リロード
+
+# バージョンの確認
+python -V
+Python 3.11.6
+
+{% endhighlight %}
+
+
+## unistall
+
+`asdf uninstall python`
+
+## pipenv で仮想環境を作成する
+
+{% highlight shell %}
+
+touch requirements.txt
+
+# 必要なパッケージを書く。
+pipenv --python 3.11.6
+
+pipenv install -r requirements.txt
+
+pipenv shell
+
+{% endhighlight %}
+
+## pipenv で仮想環境を削除する
+
+`pipenv --rm`
+
+## 参考文献
+
+- [【図解】作業が倍速！pipenvの使い方【Python】]
+- [ Pythonの開発環境の3つの観点をおさえよう ]
+
+[【図解】作業が倍速！pipenvの使い方【Python】]: https://zenn.dev/nekoallergy/articles/py-env-pipenv01
+[ Pythonの開発環境の3つの観点をおさえよう ]:   https://zenn.dev/os1ma/articles/935f6e653f1052
