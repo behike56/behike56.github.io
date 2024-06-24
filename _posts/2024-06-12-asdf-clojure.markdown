@@ -74,4 +74,4 @@ echo "java openjdk-21.0.2" >> /Users/behike56/.tool-versions
 - [Pythonの開発環境の3つの観点をおさえよう]
 
 [【図解】作業が倍速！pipenvの使い方【Python】]: https://zenn.dev/nekoallergy/articles/py-env-pipenv01
-[Pythonの開発環境の3つの観点をおさえよう]:   https://zenn.dev/os1ma/articles/935f6e653f1052
+[Pythonの開発環境の3つの観点をおさえよう]: https://zenn.dev/os1ma/articles/935f6e653f1052
