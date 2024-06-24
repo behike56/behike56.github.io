@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "WEB API - Essential"
+date:   2024-06-11 21:21:49 +0900
+categories: jekyll update
+tags:
+- WEB API
+---
+
+## WEB APIとは？
