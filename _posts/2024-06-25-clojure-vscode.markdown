@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Clojure Coding - VScode"
-date:   2024-06-25 00:00: +0900
+date:   2024-06-25 00:00:00 +0900
 categories: jekyll update
 tags:
 - 開発環境構築
@@ -29,7 +29,9 @@ tags:
 project type:
 `leiningen`
 
-### 評価したい関数があるファイルで使用する
+### 関数の評価を可能にする
+
+評価したい関数があるファイルで使用する
 
 `Load/Evaluate Current File and its Requires/Dependencies`　ctrl + option + c Enter
 

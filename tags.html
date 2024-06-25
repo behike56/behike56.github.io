@@ -32,11 +32,15 @@ permalink: /tags
         {{ tag_name | capitalize | replace: "_", " " }}
       </h3>
 
+      <ul>
       {% for post in site.tags[tag_name] %}
-        <a href="{{ post.url | prepend: baseurl }}">
-          {{ post.title }}
-        </a>
+        <li>
+          <a href="{{ post.url | prepend: baseurl }}">
+            {{ post.title }}
+          </a>
+        </li>
       {% endfor %}
+      </ul>
     </div>
   {% endfor %}
 </section>
