@@ -2,7 +2,7 @@
 layout: post
 title:  "開発環境構築 - asdf clojure"
 date:   2024-06-12 00:00:00 +0900
-categories: 
+categories:  jekyll update
 tags:
 - 開発環境構築
 ---
